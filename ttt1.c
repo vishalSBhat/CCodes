@@ -1,10 +1,10 @@
 #include<stdio.h> 
 #include<stdlib.h>
-#include<time.h>
 int a[3][3]; 
 void display()
 {
     system("clear");
+    printf("\nPlayer 1 is X\nPlayer 2 is O\n\n");
         int i,j;
         for(i=0;i<3;i++)
         {
@@ -87,15 +87,11 @@ int condition(int i,int j)
 } 
 int main() 
 { 
-    int ot[10],i,j,b=1,f=0; 
-    clock_t wtime;
+    int ot[10],i,j,b=1,f=0;
     for(i=0;i<3;i++) 
     for(j=0;j<3;j++) 
     a[i][j]=++f+10; 
     f=0;
-    printf("\nPlayer 1 is X\nPlayer 2 is O\n\n");
-    wtime=clock()+2000000;
-    while(clock()<wtime);
     do 
     {
         display();      
