@@ -1,6 +1,6 @@
 #include<stdio.h> 
 #include<stdlib.h>
-int a[3][3]={11,12,13,14,15,16,17,18,19};; 
+int a[3][3]={11,12,13,14,15,16,17,18,19};
 void display()
 {
     system("clear");
