@@ -88,7 +88,6 @@ int condition(int i,int j)
 int main() 
 { 
     int ot[10],i,j,b=1,f=0;
-    f=0;
     do 
     {
         display();      
