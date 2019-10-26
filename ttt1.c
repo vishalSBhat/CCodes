@@ -1,6 +1,6 @@
 #include<stdio.h> 
 #include<stdlib.h>
-int a[3][3]; 
+int a[3][3]={11,12,13,14,15,16,17,18,19};; 
 void display()
 {
     system("clear");
@@ -88,9 +88,6 @@ int condition(int i,int j)
 int main() 
 { 
     int ot[10],i,j,b=1,f=0;
-    for(i=0;i<3;i++) 
-    for(j=0;j<3;j++) 
-    a[i][j]=++f+10; 
     f=0;
     do 
     {
@@ -121,12 +118,6 @@ int main()
             else
             b=2; 
         }
-        if(f==9) 
-        { 
-        display();
-        printf("Nobody Wins\n"); 
-        break;
-        }
         if(f>=5) 
         { 
         if(check(a[0][0]+a[0][1]+a[0][2])) 
@@ -145,6 +136,12 @@ int main()
         b=condition(0,0);
         else if(check(a[0][2]+a[1][1]+a[2][0]))  
         b=condition(0,2);
+        }
+        else if(f==9) 
+        { 
+        display();
+        printf("Nobody Wins\n"); 
+        break;
         }
     }while(b!=0); 
     return 0; 
